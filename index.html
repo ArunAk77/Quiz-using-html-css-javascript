@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML.2</title>
+    <style>
+        #bod{
+           background: linear-gradient(rgb(86, 207, 255),rgb(255, 255, 255));
+            margin: 0px;
+            padding: 100px;
+        }
+            .section{
+                    padding: 2px;
+                    background-color: aqua;
+                    background-attachment: fixed;
+                    background-size: cover;
+                    background-image: url(https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?cs=srgb&dl=pexels-pixabay-206359.jpg&fm=jpg);
+                    border-radius: 20px;
+            }
+            
+        
+        .container{
+           justify-content: center;
+            background-color: pink;
+            margin: 100px;
+            padding: 50px 50px;
+            border-radius: 20px;
+        }
+        input{
+            padding: 10px;
+            width: 90%;
+            border-radius: 10px;
+        }
+        button{
+            padding:10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: rgb(163, 32, 32);
+            color: white;
+            border-radius: 10px;
+        }
+        #fir,#sec,#thir,#four{
+            border-radius: 20px;
+            margin: 5px;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body id="bod">
+    <div class="section">
+        <div class="container">
+            <h1 style="font-weight: bold;"> In web design, what does CSS stand for?</h1>
+            <div id="fir">
+            <button onclick="change()" id="btn1">A</button>
+            <input style="font-size:small; color: black; font-weight: bolder;" placeholder="counter style sheet"  type="text"><br>
+        </div>
+        <div id="sec">
+            <button onclick="change1()" id="btn2">B</button>
+            <input style="font-size:small; color: black; font-weight: bolder;" placeholder="corrective style sheet" type="text"><br>
+        </div>
+        <div id="thir">
+            <button onclick="change2()" id="btn3">C</button>
+            <input style="font-size:small; color: black; font-weight: bolder;" placeholder="computer style sheet" type="text"><br>
+        </div>
+        <div id="four">
+            <button onclick="change3()" id="btn4">D</button>
+            <input style="font-size:small; color: black; font-weight: bolder;" placeholder="cascading style sheet" type="text"><br>
+        </div>
+    </div>
+    <script>
+        function change(){
+           document.getElementById("fir").style.backgroundColor="red";
+        }
+        function change1(){
+           document.getElementById("sec").style.backgroundColor="red";
+        }
+        function change2(){
+           document.getElementById("thir").style.backgroundColor="red";
+        }
+        function change3(){
+           document.getElementById("four").style.backgroundColor="green";
+        }
+        //    document.getElementById("").style.backgroundColor="red";
+        //    document.getElementById("four").style.backgroundColor="red";
+        //    document.getElementById("thir").style.backgroundColor="green";
+        //    document.getElementById("four").style.backgroundColor="green";
+        
+    </script>
+</body>
+</html>
